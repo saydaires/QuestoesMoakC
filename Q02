@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+main() {
+	char name[100], marriageStatus[50], sex;
+	short marriageTime;
+	
+	printf("Inform your name: ");
+	scanf("%s", name);
+	
+	printf("Inform your sex (M|F): ");
+	scanf(" %c", &sex);
+	
+	printf("Inform your Marriage Status(Marriage | Single): ");
+	scanf("%s", marriageStatus);
+	
+	if(sex == 'F' && strcmp(marriageStatus, "Marriage") == 0) {
+		printf("Provide your Marriage Time (in years): ");
+		scanf("%hd", marriageTime);	
+	}
+	system("pause");
+}
